@@ -78,7 +78,7 @@ def button(chat_id):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn1 = types.KeyboardButton("Мой город")
     btn2 = types.KeyboardButton("Сменить город")
-    btn3 = types.KeyboardButton("Погода в другом городе")  # Новая кнопка
+    btn3 = types.KeyboardButton("Погода в другом городе")
     markup.add(btn1, btn2, btn3)
     bot.send_message(chat_id, "Выберите действие:", reply_markup=markup)
 
