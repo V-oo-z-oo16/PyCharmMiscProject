@@ -24,15 +24,6 @@ class MyGame(arcade.Window):
             self.platform.center_x = 0
         if self.platform.center_x > self.width:
             self.platform.center_x = self.width
-
-        """if self.ball.center_y < 0:
-            self.ball.change_y =- self.ball.change_y
-            self.restart()
-            self.score = 0
-
-        if self.ball.center_y > self.height:
-            self.ball.change_y = -self.ball.change_y"""
-
         if self.ball.center_x < 0:
             self.ball.change_x =- self.ball.change_x
         if self.ball.center_x > self.width:
@@ -42,9 +33,6 @@ class MyGame(arcade.Window):
         if self.ball.center_y < 0:
             self.ball.change_y = -self.ball.change_y
             self.restart()
-
-
-
 
         platform1_collision = arcade.check_for_collision(self.platform, self.ball)
 
